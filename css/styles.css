@@ -338,6 +338,13 @@ body {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover, .modal-btn:focus {
+    color: var(--secondary-web-text-color);
 }
 
 .modal-close {
@@ -378,6 +385,33 @@ body {
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+    padding-left: 42px;
+    font-size: 16px;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.name-field input:hover + .modal-icon-name, .name-field input:focus + .modal-icon-name {
+    color: var(--secondary-web-text-color);
+}
+
+.phone-field input:hover+.modal-icon-phone,
+.phone-field input:focus+.modal-icon-phone {
+    color: var(--secondary-web-text-color);
+}
+
+.mail-field input:hover+.modal-icon-mail,
+.mail-field input:focus+.modal-icon-mail {
+    color: var(--secondary-web-text-color);
+}
+
+.name-field input:hover,
+.name-field input:focus, .phone-field input:hover,
+.phone-field input:focus,.mail-field input:hover,
+.mail-field input:focus, .text-field textarea:hover,
+.text-field textarea:focus  {
+    border: 1px solid var(--secondary-web-text-color);
 }
 
 .name-field label,
@@ -415,7 +449,16 @@ body {
     border: none;
     background: var(--secondary-web-text-color);
     box-shadow: 0px 4px 4px var(--form-button-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.button-modal-form:hover, .button-modal-form:focus {
+    background-color: #188CE8;
+}
+
+
 
 textarea {
     resize: none;
@@ -428,6 +471,10 @@ textarea {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .agreement-field {
