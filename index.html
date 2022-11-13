@@ -426,8 +426,15 @@
                     <textarea name="modal-text" id="modal-text" placeholder="Введіть текст"></textarea>
                 </div>
                 <div class="agreement-field">
-                    <input type="checkbox" name="agreement" value="agreement" id="agreement">
-                    <label for="agreement">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                    <label>
+                        <input class="checkbox" type="checkbox" name="agreement" value="agreement">
+                        <span class="icon">
+                            <svg class="modal-icon-chek" width="16" height="15">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Погоджуюся з розсилкою та приймаю <a class="agreement-link" href="#">Умови договору </a>
+                    </label>
                 </div>
                 <button type="submit" class="button-modal-form">Відправити
                 </button>

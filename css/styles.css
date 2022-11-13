@@ -482,10 +482,59 @@ textarea {
 }
 
 .agreement-field label {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--contacts);
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts);
+}
+
+.agreement-link {
+    text-decoration: underline;
+    border-bottom: 1px solid #2196F3;
+    color: #2196F3;
+    text-decoration: none;
+
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.icon {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    position: relative;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.checkbox:checked + .icon {
+    background-color: var(--secondary-web-text-color);
+    background-size: contain;
+    border: 2px solid var(--secondary-web-text-color);
+}
+
+.modal-icon-chek {
+    fill: currentColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
 }
 
 /* list item ------------------------------*/
