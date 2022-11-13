@@ -984,7 +984,7 @@ textarea {
     border: 1px solid var(--form-footer-color);
     background-color: var(--background-dark);
     border-radius: 4px;
-    padding: 15px 16px;
+    padding: 15px 16px 15px 65px;
     color: var(--background-rgba);
 }
 
