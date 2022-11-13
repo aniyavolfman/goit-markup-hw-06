@@ -22,6 +22,7 @@
     --overlay-color: rgba(33, 150, 243, 0.9);
     --overlay-color-secondary: rgba(47, 48, 58, 0.8);
     --modal-color: rgba(0, 0, 0, 0.2);
+    --form-footer-color: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -743,4 +744,48 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.footer-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-footer-form {
+    display: inline-block;
+    padding: 10px 28px;
+    min-width: 200px;
+    min-height: 50px;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--third-web-text-color);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    vertical-align: middle;
+    background: var(--secondary-web-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-svg {
+    margin-left: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.footer-form input {
+    min-width: 358px;
+    min-height: 50px;
+    border: 1px solid var(--form-footer-color);
+    background-color: var(--background-dark);
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: var(--background-rgba);
 }
