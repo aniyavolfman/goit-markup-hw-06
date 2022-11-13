@@ -337,6 +337,7 @@ body {
     justify-content: center;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .modal-close {
@@ -360,6 +361,16 @@ body {
 
 .name-field, .phone-field, .mail-field {
     margin-bottom: 10px;
+    position: relative;
+}
+
+.modal-icon-name, .modal-icon-phone,
+.modal-icon-mail {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(-50%);
+    fill: currentColor;
 }
 
 .name-field input, .phone-field input, .mail-field input {
@@ -837,6 +848,7 @@ color: var(--contacts);
 }
 
 .footer-form {
+    position: relative;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -879,3 +891,15 @@ color: var(--contacts);
     padding: 15px 16px;
     color: var(--background-rgba);
 }
+
+.footer-label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: var(--background-rgba);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
